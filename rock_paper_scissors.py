@@ -31,10 +31,11 @@ elif (computer_input == "paper" and user_input == "paper"):
 elif (computer_input == "scissors" and user_input == "scissors"):
     print("computer choice:  " + computer_input)
     print("you draw")
-elif(user_input !="scissors"or"paper"or"rock" ):
-    print("computer choice:  " + computer_input)
-    print("you entered wrong word please check spelling")
+
 
 else:
-    print("computer choice:  "+computer_input)
-    print("you win")
+    if(user_input != 'scissors' and user_input!='rock' and user_input!='paper'):
+        print("you entered wrong word please check spelling")
+    else:
+        print("computer choice:  " + computer_input)
+        print("you win")
